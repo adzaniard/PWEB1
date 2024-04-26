@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      h2 {
+        text-align: left;
+      }
+
+      h3 {
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading 1 (center)</h1>
+    <h2>Heading 2 (left)</h2>
+    <h3>Heading 3 (right)</h3>
+
+    <p>The three headings above are aligned center, left and right.</p>
+
+    <style>
+      div {
+        border: 1px solid black;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        text-align: justify;
+      }
+    </style>
+
+    <h1>Example text-align: justify</h1>
+
+    <p>
+      The text-align: justify; value stretches the lines so that each line has
+      equal width (like in newspapers and magazines).
+    </p>
+
+    <div>
+      In my younger and more vulnerable years my father gave me some advice that
+      I've been turning over in my mind ever since. 'Whenever you feel like
+      criticizing anyone,' he told me, 'just remember that all the people in
+      this world haven't had the advantages that you've had.'
+    </div>
+
+    <style>
+      p.ex1 {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+      }
+    </style>
+
+    <p>This is the default text direction.</p>
+
+    <p class="ex1">This is right-to-left text direction.</p>
+
+    <style>
+      img.a {
+        vertical-align: baseline;
+      }
+
+      img.b {
+        vertical-align: text-top;
+      }
+
+      img.c {
+        vertical-align: text-bottom;
+      }
+
+      img.d {
+        vertical-align: sub;
+      }
+
+      img.e {
+        vertical-align: super;
+      }
+    </style>
+
+    <h1>The vertical-align Property</h1>
+
+    <h2>vertical-align: baseline (default):</h2>
+    <p>
+      An
+      <img
+        class="a"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAASFBMVEVVrO7////z+f5Rqu6dzvX8/f/g8PzI5PlXre5csO/v9/1isu+h0PWVy/TV6vtuuPGn1PaEwvOw2Pe/3vh8vvLV6/uJxvNzu/GbYu3QAAACKklEQVR4nO3W3a6jIBRA4Q0oKloR9dT3f9PBsaZ/50wmkxpGsr673u2VLQVRL0pnqyEsrZxNs4Shsq58DZLnn/prDI0xJvW4/yTO3YTxS/+hUFeFl3PW7Yz4otc/FJa28/W5+1am9p0tvyvU01ynnu5D6nnS74WuaM+/v51pO/da6C6pp/qwi3sudNd8FrgxV/dY6C65BcbE2xZlO4OpxzlEp/fCcjrfC+ZvtNNeaOf8vtGVme1WqLtc7sFXzfqdiiorn3qSw/h+LdRFriuMj5tCx8Le53kKVyYuUcox9RiHGktxId8VxiUGJ7ZJPcWhGitVziuMS6xkyLxwkKyP4XoQJd/rfrNI3n808fmdegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgP9OkHuBgrfjUIxxskWBSz3AoE2TIvHCQKvPCSmzefzWNFZf1QTTBSTmmnuJQYymq9/ku0fheidJFnXqQw9SFjoWqyvfSjytcC3WX6xLrTv8uVHbO8ySa2aqtsJza1MMcop3UrTB+p6mHOcT6jd4Klbvk952ai1P3QuWuuSWa6xa4F8Ytph7pw24bvBcq17X5rNG03R54L1R6mnO5F+t50uq9MN6Lna/Pv0dT+84+VD0WKt0XXs7daMQXvVY/Fa6NY2iMOWdlnLsJ43PfW2F84DhbDWE53yunXcJQWVe+Bv0ClXANFS4wnL0AAAAASUVORK5CYII="
+        width="9"
+        height="9"
+      />
+      image with a default alignment.
+    </p>
+
+    <h2>vertical-align: text-top:</h2>
+    <p>
+      An
+      <img
+        class="b"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAASFBMVEVVrO7////z+f5Rqu6dzvX8/f/g8PzI5PlXre5csO/v9/1isu+h0PWVy/TV6vtuuPGn1PaEwvOw2Pe/3vh8vvLV6/uJxvNzu/GbYu3QAAACKklEQVR4nO3W3a6jIBRA4Q0oKloR9dT3f9PBsaZ/50wmkxpGsr673u2VLQVRL0pnqyEsrZxNs4Shsq58DZLnn/prDI0xJvW4/yTO3YTxS/+hUFeFl3PW7Yz4otc/FJa28/W5+1am9p0tvyvU01ynnu5D6nnS74WuaM+/v51pO/da6C6pp/qwi3sudNd8FrgxV/dY6C65BcbE2xZlO4OpxzlEp/fCcjrfC+ZvtNNeaOf8vtGVme1WqLtc7sFXzfqdiiorn3qSw/h+LdRFriuMj5tCx8Le53kKVyYuUcox9RiHGktxId8VxiUGJ7ZJPcWhGitVziuMS6xkyLxwkKyP4XoQJd/rfrNI3n808fmdegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgP9OkHuBgrfjUIxxskWBSz3AoE2TIvHCQKvPCSmzefzWNFZf1QTTBSTmmnuJQYymq9/ku0fheidJFnXqQw9SFjoWqyvfSjytcC3WX6xLrTv8uVHbO8ySa2aqtsJza1MMcop3UrTB+p6mHOcT6jd4Klbvk952ai1P3QuWuuSWa6xa4F8Ytph7pw24bvBcq17X5rNG03R54L1R6mnO5F+t50uq9MN6Lna/Pv0dT+84+VD0WKt0XXs7daMQXvVY/Fa6NY2iMOWdlnLsJ43PfW2F84DhbDWE53yunXcJQWVe+Bv0ClXANFS4wnL0AAAAASUVORK5CYII="
+        width="9"
+        height="9"
+      />
+      image with a text-top alignment.
+    </p>
+
+    <h2>vertical-align: text-bottom:</h2>
+    <p>
+      An
+      <img
+        class="c"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAASFBMVEVVrO7////z+f5Rqu6dzvX8/f/g8PzI5PlXre5csO/v9/1isu+h0PWVy/TV6vtuuPGn1PaEwvOw2Pe/3vh8vvLV6/uJxvNzu/GbYu3QAAACKklEQVR4nO3W3a6jIBRA4Q0oKloR9dT3f9PBsaZ/50wmkxpGsr673u2VLQVRL0pnqyEsrZxNs4Shsq58DZLnn/prDI0xJvW4/yTO3YTxS/+hUFeFl3PW7Yz4otc/FJa28/W5+1am9p0tvyvU01ynnu5D6nnS74WuaM+/v51pO/da6C6pp/qwi3sudNd8FrgxV/dY6C65BcbE2xZlO4OpxzlEp/fCcjrfC+ZvtNNeaOf8vtGVme1WqLtc7sFXzfqdiiorn3qSw/h+LdRFriuMj5tCx8Le53kKVyYuUcox9RiHGktxId8VxiUGJ7ZJPcWhGitVziuMS6xkyLxwkKyP4XoQJd/rfrNI3n808fmdegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgP9OkHuBgrfjUIxxskWBSz3AoE2TIvHCQKvPCSmzefzWNFZf1QTTBSTmmnuJQYymq9/ku0fheidJFnXqQw9SFjoWqyvfSjytcC3WX6xLrTv8uVHbO8ySa2aqtsJza1MMcop3UrTB+p6mHOcT6jd4Klbvk952ai1P3QuWuuSWa6xa4F8Ytph7pw24bvBcq17X5rNG03R54L1R6mnO5F+t50uq9MN6Lna/Pv0dT+84+VD0WKt0XXs7daMQXvVY/Fa6NY2iMOWdlnLsJ43PfW2F84DhbDWE53yunXcJQWVe+Bv0ClXANFS4wnL0AAAAASUVORK5CYII="
+        width="9"
+        height="9"
+      />
+      image with a text-bottom alignment.
+    </p>
+
+    <h2>vertical-align: sub:</h2>
+    <p>
+      An
+      <img
+        class="d"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAASFBMVEVVrO7////z+f5Rqu6dzvX8/f/g8PzI5PlXre5csO/v9/1isu+h0PWVy/TV6vtuuPGn1PaEwvOw2Pe/3vh8vvLV6/uJxvNzu/GbYu3QAAACKklEQVR4nO3W3a6jIBRA4Q0oKloR9dT3f9PBsaZ/50wmkxpGsr673u2VLQVRL0pnqyEsrZxNs4Shsq58DZLnn/prDI0xJvW4/yTO3YTxS/+hUFeFl3PW7Yz4otc/FJa28/W5+1am9p0tvyvU01ynnu5D6nnS74WuaM+/v51pO/da6C6pp/qwi3sudNd8FrgxV/dY6C65BcbE2xZlO4OpxzlEp/fCcjrfC+ZvtNNeaOf8vtGVme1WqLtc7sFXzfqdiiorn3qSw/h+LdRFriuMj5tCx8Le53kKVyYuUcox9RiHGktxId8VxiUGJ7ZJPcWhGitVziuMS6xkyLxwkKyP4XoQJd/rfrNI3n808fmdegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgP9OkHuBgrfjUIxxskWBSz3AoE2TIvHCQKvPCSmzefzWNFZf1QTTBSTmmnuJQYymq9/ku0fheidJFnXqQw9SFjoWqyvfSjytcC3WX6xLrTv8uVHbO8ySa2aqtsJza1MMcop3UrTB+p6mHOcT6jd4Klbvk952ai1P3QuWuuSWa6xa4F8Ytph7pw24bvBcq17X5rNG03R54L1R6mnO5F+t50uq9MN6Lna/Pv0dT+84+VD0WKt0XXs7daMQXvVY/Fa6NY2iMOWdlnLsJ43PfW2F84DhbDWE53yunXcJQWVe+Bv0ClXANFS4wnL0AAAAASUVORK5CYII="
+        width="9"
+        height="9"
+      />
+      image with a sub alignment.
+    </p>
+
+    <h2>vertical-align: sup:</h2>
+    <p>
+      An
+      <img
+        class="e"
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAASFBMVEVVrO7////z+f5Rqu6dzvX8/f/g8PzI5PlXre5csO/v9/1isu+h0PWVy/TV6vtuuPGn1PaEwvOw2Pe/3vh8vvLV6/uJxvNzu/GbYu3QAAACKklEQVR4nO3W3a6jIBRA4Q0oKloR9dT3f9PBsaZ/50wmkxpGsr673u2VLQVRL0pnqyEsrZxNs4Shsq58DZLnn/prDI0xJvW4/yTO3YTxS/+hUFeFl3PW7Yz4otc/FJa28/W5+1am9p0tvyvU01ynnu5D6nnS74WuaM+/v51pO/da6C6pp/qwi3sudNd8FrgxV/dY6C65BcbE2xZlO4OpxzlEp/fCcjrfC+ZvtNNeaOf8vtGVme1WqLtc7sFXzfqdiiorn3qSw/h+LdRFriuMj5tCx8Le53kKVyYuUcox9RiHGktxId8VxiUGJ7ZJPcWhGitVziuMS6xkyLxwkKyP4XoQJd/rfrNI3n808fmdegAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgP9OkHuBgrfjUIxxskWBSz3AoE2TIvHCQKvPCSmzefzWNFZf1QTTBSTmmnuJQYymq9/ku0fheidJFnXqQw9SFjoWqyvfSjytcC3WX6xLrTv8uVHbO8ySa2aqtsJza1MMcop3UrTB+p6mHOcT6jd4Klbvk952ai1P3QuWuuSWa6xa4F8Ytph7pw24bvBcq17X5rNG03R54L1R6mnO5F+t50uq9MN6Lna/Pv0dT+84+VD0WKt0XXs7daMQXvVY/Fa6NY2iMOWdlnLsJ43PfW2F84DhbDWE53yunXcJQWVe+Bv0ClXANFS4wnL0AAAAASUVORK5CYII="
+        width="9"
+        height="9"
+      />
+      image with a super alignment.
+    </p>
+
+
+
+    
+  </body>
+</html>
