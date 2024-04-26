@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.normal table, .normal th, .normal td {
+  border: 1px solid black;
+}
+.invisible table, .invisible th, .invisible td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+.invisible th, .invisible td {
+  background-color: #96D4D4;
+}
+
+
+.round th, .round td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.dotted th, .dotted td {
+  border-style: dotted;
+  border-color: #96D4D4;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Table With Border</h2>
+
+<p>Use the CSS border property to add a border to the table.</p>
+<div class="normal">
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Ayato</td>
+    <td>Kamisato</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Kazuha</td>
+    <td>Kaedehara</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>Hu</td>
+    <td>Tao</td>
+    <td>17</td>
+  </tr>
+</table>
+</div>
+
+
+<h2>Table With Invisible Borders</h2>
+
+<p>Style the table with white borders and a background color of the cells to make the impression of invisible borders. Skip the border around the table by leaving out table from the css selector</p>
+
+
+<div class="invisible">
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Ayato</td>
+    <td>Kamisato</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Kazuha</td>
+    <td>Kaedehara</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>Hu</td>
+    <td>Tao</td>
+    <td>17</td>
+  </tr>
+</table>
+</div>
+
+
+<h2>Table With Rounded Borders</h2>
+
+<p>Use the CSS border-radius property to add rounded corners to the borders.</p>
+<div class="round">
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Ayato</td>
+    <td>Kamisato</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Kazuha</td>
+    <td>Kaedehara</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>Hu</td>
+    <td>Tao</td>
+    <td>17</td>
+  </tr>
+</table>
+</div>
+
+
+<h2>Table With Dotted Borders</h2>
+
+<p>Use the CSS border-style property to set the style of the borders. Use the CSS border-color property to set the color of the borders.</p>
+
+<div class="dotted">
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Ayato</td>
+    <td>Kamisato</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Kazuha</td>
+    <td>Kaedehara</td>
+    <td>22</td>
+  </tr>
+  <tr>
+    <td>Hu</td>
+    <td>Tao</td>
+    <td>17</td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two columns</h2>
+<p>To make a cell span more than one column, use the colspan attribute.</p>
+<table style="width:100%">
+    <tr>
+      <th style="width:70%">Firstname</th>
+      <th>Lastname</th> 
+      <th>Age</th>
+    </tr>
+    <tr style="height:200px">
+      <td>Ayato</td>
+      <td>Kamisato</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>Kazuha</td>
+      <td>Kaedehara</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Hu</td>
+      <td>Tao</td>
+      <td>17</td>
+    </tr>
+  </table>
+
+<p>
+  <table style="width:100%">
+    <caption>Citizen</caption>
+    <tr>
+      <th rowspan="2">Name</th>
+      <td>Ayato</td>
+      <td>Kazuha</td>
+      <td>Hu</td>
+    </tr>
+    <tr>
+        <td>Kamisato</td>
+        <td>Kaedehara</td>
+        <td>Tao</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>30</td>
+        <td>22</td>
+        <td>17</td>
+    </tr>
+  </table>
+  </p>
+  </body>
+  </html>
