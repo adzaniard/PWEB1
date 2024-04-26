@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+
+<p id="demo"></p>
+
+<script>
+let y = 123e5;
+let z = 123e-5;
+
+document.getElementById("demo").innerHTML =
+y + "<br>" + z;
+</script>
+
+
+<h1>JavScript Bigint</h1>
+<p>A BigInt can not have decimals.</p>
+
+<p id="demo2"></p>
+
+<p>You cannot perform math between a BigInt type and a Number type.</p>
+
+<script>
+let x = BigInt("123456789012345678901234567890");
+document.getElementById("demo2").innerHTML = x; 
+</script>
+</body>
+</html>
+
+

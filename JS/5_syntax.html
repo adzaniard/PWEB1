@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Number can be written with or without decimals.</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+document.getElementById("demo").innerHTML = 156.5;
+document.getElementById("demo2").innerHTML = 10;
+</script>
+
+
+<h2>JavaScript Strings</h2>
+
+<p>Strings can be written with double or single quotes.</p>
+
+<p id="demo3"></p>
+
+<script>
+document.getElementById('demo3').innerHTML = " Kim Junkyu";
+</script>
+
+
+<h2>JavaScript Variables</h2>
+
+<p>In this example, x is defined as a variable. In JavaScript the = operator is used to assign values to variables.
+Then, x is assigned the value of 4:</p>
+
+<p id="demo4"></p>
+<p>JavaScript uses arithmetic operators to compute values (just like algebra). The let keyword tells the browser to create variables. For example, (x + 8) * 10 </p>
+<p id="demo5"></p>
+
+<script>
+let x; 
+x = 4;
+document.getElementById("demo4").innerHTML = x;
+document.getElementById("demo5").innerHTML = (x + 8) * 10;
+</script>
+
+
+<h2>JavaScript Expressions</h2>
+
+<p>Expressions compute to values. Expressions can also contain variable values</p>
+
+<p id="demo6"></p>
+<p>The values can be of various types, such as numbers and strings.
+    For example, "Kaedehara" + " " + "Kazuha", evaluates to: </p>
+    <p id="demo7"></p>
+<p>The var keyword also tells the browser to create variables</p>
+<script>
+var a;
+a = 8;
+document.getElementById("demo6").innerHTML = a * 10;
+document.getElementById("demo7").innerHTML = "Kaedehara" + " "  + "Kazuha";
+</script>
+
+
+<h2>JavaScript is Case Sensitive</h2>
+
+<p>The variables lastName and lastname, are two different variables.</p>
+
+<p id="demo8"></p>
+
+<script>
+let lastname, lastName;
+lastName = "Kugisaki";
+lastname = "Nobara";
+document.getElementById("demo8").innerHTML = lastName;
+</script>
+
+</body>
+</html>

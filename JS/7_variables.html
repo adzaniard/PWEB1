@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Variables</h1>
+
+<p>In this example, x, y, and z are undeclared.</p>
+<p>They are automatically declared when first used.</p>
+
+<p id="demo"></p>
+
+<script>
+x = 8;
+y = 10;
+z = x + y;
+document.getElementById("demo").innerHTML =
+"The value of z is: " + z;
+</script>
+
+
+<h1>JavaScript Variables</h1>
+
+<p>In this example, price1, price2, and total are variables.</p>
+
+<p id="demo2"></p>
+
+<script>
+var price1 = 1000;
+const price2 = 500;
+let total = price1 + price2;
+document.getElementById("demo2").innerHTML =
+"The total is: " + total;
+</script>
+
+
+<h1>JavaScript Variables</h1>
+
+<p>Strings are written with quotes.</p>
+<p>Numbers are written without quotes.</p>
+
+<p id="demo3"></p>
+
+<script>
+const pi = 3.33;
+let person = "Ayano";
+let answer = 'Yes I am!';
+
+document.getElementById("demo3").innerHTML =
+pi + "<br>" + person + "<br>" + answer;
+</script>
+
+
+<h1>JavaScript Variables</h1>
+
+<p>You can declare many variables in one statement and can span multiple lines.A variable without a value has the value of:</p>
+
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+let owner = "Kamisato Ayato", 
+carName = "British Short Hair", 
+price = 10000, age;
+document.getElementById("demo4").innerHTML = carName;
+document.getElementById("demo5").innerHTML = age;
+</script>
+
+
+<h1>JavaScript Variables</h1>
+
+<p>If you re-declare a JavaScript variable declared with var, it will not lose its value.</p>
+
+<p id="demo6"></p>
+
+<script>
+var car = "Persian";
+var car;
+document.getElementById("demo6").innerHTML = car;
+</script>
+
+
+<h1>JavaScript Variables</h1>
+
+<p>The result of adding "1" + 4 + 3 is:</p>
+<p id="demo7"></p>
+<p>The result of adding 3 + 5 + "6" is:</p>
+<p id="demo8"></p>
+
+
+<script>
+    let a = "1" + 4 + 3;
+    document.getElementById("demo7").innerHTML = a;
+    let b = 3 + 5 + "6";
+    document.getElementById("demo8").innerHTML = b;
+</script>
+
+
+<h1>JavaScript Variables</h1>
+
+<p>The dollar sign is treated as a letter in JavaScript names. </p>
+
+<p id="demo9"></p>
+<p>The underscore is treated as a letter in JavaScript names.</p>
+<p id="demo10"></p>
+
+
+<script>
+    let $$$ = 3;
+    let $myMoney = 8;
+    document.getElementById("demo9").innerHTML = $$$ + $myMoney;
+    let _x = 8;
+    let _100 = 6;
+    
+    document.getElementById("demo10").innerHTML = _x + _100;
+</script>
+
+
+
+
+</body>
+</html>

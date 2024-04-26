@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Numbers</h1>
+<h2>Integer Precision</h2>
+
+<p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+
+<p id="demo"></p>
+
+<script>
+let x = 999999999999999;
+let y = 9999999999999999;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+</script>
+
+
+<h1>JavaScript Numbers</h1>
+<h2>Floating Point Precision</h2>
+
+<p>Floating point arithmetic is not always 100% accurate.</p>
+
+<p id="demo2"></p>
+
+<script>
+let a = 0.2 + 0.1;
+document.getElementById("demo2").innerHTML = "0.2 + 0.1 = " + a;
+</script>
+
+
+<h2>JavaScript Numbers</h2>
+
+<p>Floating point arithmetic is not always 100% accurate:</p>
+<p id="demo3"></p>
+
+<p>But it helps to multiply and divide:</p>
+
+<p id="demo4"></p>
+
+<script>
+let b = 0.2 + 0.1;
+document.getElementById("demo3").innerHTML = "0.2 + 0.1 = " + b;
+let c = (0.2*10 + 0.1*10) / 10;
+document.getElementById("demo4").innerHTML = "0.2 + 0.1 = " + c;
+</script>
+
+
+</body>
+</html>
